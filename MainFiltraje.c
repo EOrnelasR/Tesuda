@@ -18,3 +18,5 @@ ADC_Init();
 ADC_ON();
 ADC_AQ();
 ADCON0bits.GO_DONE = 1;
+
+// SEBAS WAS HERE
