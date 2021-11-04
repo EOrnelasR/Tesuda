@@ -62,3 +62,10 @@ void main(void){
 }
 
 
+void __interrupt (high_priority) rutinaADC (void){
+    if(PIR1bits.ADIF==1)    // Se Coloca este tipo de redacc
+{
+        PORTD = ADRESH;     // Las Salidas del Puerto D en Alto (del bits más sigti
+}
+	PIR1bits.ADIF = 0;  // Se Coloca la Bandera de Estado 0
+
