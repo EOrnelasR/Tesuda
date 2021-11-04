@@ -13,3 +13,8 @@
 #include <stdlib.h>
 #include <conio.h>
 #include <string.h>
+
+ADC_Init();
+ADC_ON();
+ADC_AQ();
+ADCON0bits.GO_DONE = 1;
