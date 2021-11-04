@@ -34,7 +34,8 @@ void config(void){
 //////////////////////////////////////////////////////////
 
 void main(void){
- while(ADCON0bits.GO_DONE == 1){
+  config();
+  while(ADCON0bits.GO_DONE == 1){
     valor = ADRES;
     voltaje = (5.0*valor)/1023;
   } 
