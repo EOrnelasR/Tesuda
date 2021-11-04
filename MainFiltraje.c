@@ -29,7 +29,7 @@ ADCON0bits.GO_DONE = 1;
 Asginacion de Funciones
 */
 void config(void){
-  TRISBbits.RB0 = 1;
+  TRISBbits.RB0 = 0;
 }  
 //////////////////////////////////////////////////////////
 
