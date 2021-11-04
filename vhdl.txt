@@ -1,0 +1,23 @@
+vhdl
+if rising_edge(cdiv(10)) then
+				if stime < 10 then
+					stime <= stime+1;
+					signal_50n <= '1';
+				else
+				stime <= 0;
+				end if;
+			end if;
+		elsif signal_boton2 = '1' then
+			led2 <= '0';
+			led3 <= '1';
+			if clk_200Mhz = '1' then
+				if stime2 < 20 then
+					stime2 <= stime2+1;
+					signal_100n <= '1';
+				else
+				stime2 <= 0;
+				end if;
+			end if;
+		else
+			led <= '1';
+		end if;
